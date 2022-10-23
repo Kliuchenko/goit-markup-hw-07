@@ -364,10 +364,8 @@ ul {
 .field__wrapp {
     position: relative;
 }
-.policy__btn {
+.form__btn--submit {
     display: block;
-    /* height: 50px;
-    width: 200px; */
     padding: 10px 52px;
     border-radius: 4px;
     margin: 30px auto 0 auto;
@@ -389,8 +387,8 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.policy__btn:hover,
-.policy__btn:focus {
+.form__btn--submit:hover,
+.form__btn--submit:focus {
     background-color: #188CE8;
 }
 
@@ -445,18 +443,18 @@ ul {
     overflow: hidden;
 }
 
-.unics-list {
+.advantages__list {
     display: flex;
 }
 
-.unic-li {
+.advantages__item {
     width: calc((100% - 90px) / 4);
 }
 
-.unic-li:not(:last-child) {
+.advantages__item:not(:last-child) {
     margin-right: 30px;
 }
-.unic-name {
+.advantages__title {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -466,19 +464,19 @@ ul {
     text-transform: uppercase;
 }
 
-.unic-descr {
+.advantages__descr {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color:var(--grey-text);
 }
 
-.section.unics {
+.section.activity {
     padding-top: 0;
     padding-bottom: 94px;
 }
 
-.container-icon {
+.advantages__container-icon {
     height: 120px;
     width: 270px;
     margin-bottom: 30px;
@@ -495,21 +493,21 @@ ul {
     padding-bottom: 94px;
 }
 
-.activity-list {
+.activity__list {
     display: flex;
     padding-left: 0;
     padding-right: 0;
 }
 
-.activiti-li:not(:last-child) {
+.activity__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.activiti-li {
+.activity__item {
     position: relative;
 }
 
-.unics-description {
+.activity__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -523,14 +521,13 @@ ul {
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.unics-description > p {
+.activity__descr {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: #FFFFFF;
 }
 /* -------------------КОМАНДА---------------- */
@@ -552,7 +549,7 @@ ul {
     margin-right: 30px;
 }
 
-.activity-head,
+.activity__title,
 .team-head {
     margin-bottom: 50px;
 
