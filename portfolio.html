@@ -290,70 +290,69 @@
     <footer class="footer">
       <div class="container">
         <div>
-          <a lang="en" class="logo-txt-footer" href="./index.html">
-            <span class="logo-span">Web</span>Studio</a
+          <a lang="en" class="footer__logo" href="./index.html">
+            <span class="logo--web">Web</span>Studio</a
           >
           <address class="adress">
-            <p class="adress-street">м. Київ, пр-т Лесі Українки, 26</p>
-            <ul>
-              <li class="contacts-li">
-                <a class="contact-link-footer" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+            <p class="adress__street">м. Київ, пр-т Лесі Українки, 26</p>
+            <ul class="adress__list">
+              <li class="adress__item">
+                <a class="adress__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li class="contacts-li">
-                <a class="contact-link-footer" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="adress__item">
+                <a class="adress__link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="container-footer">
-          <p class="join">Приєднуйтесь</p>
-          <ul class="icon-footer-list">
-            <li class="icon-footer-item">
-              <a class="icon-footer-link" href="https://www.instagram.com/" target="_blank">
-                <svg class="icon-footer-contact" width="20" height="20">
+        <div class="join">
+          <p class="join__title">Приєднуйтесь</p>
+          <ul class="join__list">
+            <li class="join__item">
+              <a class="join__link" href="https://www.instagram.com/" target="_blank">
+                <svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-footer-item">
-              <a class="icon-footer-link" href="https://twitter.com/" target="_blank">
-                <svg class="icon-footer-contact" width="20" height="20">
+            <li class="join__item">
+              <a class="join__link" href="https://twitter.com/" target="_blank">
+                <svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-footer-item">
-              <a class="icon-footer-link" href="https://www.facebook.com/" target="_blank">
-                <svg class="icon-footer-contact" width="20" height="20">
+            <li class="join__item">
+              <a class="join__link" href="https://www.facebook.com/" target="_blank">
+                <svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-footer-item">
-              <a class="icon-footer-link" href="https://www.linkedin.com/" target="_blank">
-                <svg class="icon-footer-contact" width="20" height="20">
+            <li class="join__item">
+              <a class="join__link" href="https://www.linkedin.com/" target="_blank">
+                <svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <form class="email-container">
-          <b class="mail-title">Підпишіться на розсилку</b>
-          <div class="mail-input">
+        <form class="subscribe">
+          <b class="subscribe__title">Підпишіться на розсилку</b>
+          <div class="subscribe__container">
             <label for="mail-footer"></label>
             <input
-              class="mail-form"
+              class="subscribe__field"
               type="email"
               name="mail-footer"
               id="mail-footer"
               placeholder="E-mail"
             />
-            <button class="submit-mail" type="submit">
-              <span>Підписатися</span>
+            <button class="subscribe__btn" type="submit">
+              <span class="subscribe__wrapp">Підписатися</span>
               <svg
+                class="mail__icon"
                 width="24"
                 height="24"
                 fill="#fff"

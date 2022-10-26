@@ -59,8 +59,7 @@ ul {
     align-items: center;
 }
 
-.logo-txt-header,
-.logo-txt-footer,
+.footer__logo,
 .header__logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -70,12 +69,12 @@ ul {
 }
 
 .header__logo {
-    margin-right: 93px;;
+    margin-right: 93px;
 
     color: var(--logo-color);
 }
 
-.header__logo--web {
+.logo--web {
     color: var(--blue);
 }
 
@@ -537,7 +536,7 @@ ul {
     background-color: var(--less-white-for-bg);
 }
 
-.teammate-card {
+.teammate {
     width: 270px;
 
     background: var(--white);
@@ -545,12 +544,12 @@ ul {
     border-radius: 0px 0px 4px 4px;
 }
 
-.teammate-card:not(:last-child) {
+.teammate:not(:last-child) {
     margin-right: 30px;
 }
 
 .activity__title,
-.team-head {
+.team__title {
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -560,17 +559,17 @@ ul {
     letter-spacing: 0.03em;
 }
 
-.team-list {
+.team__list {
     display: flex;
     padding-left: 0;
 }
 
-.team-descr {
+.teammate__descr {
     padding: 30px 32px;
 }
 
-.teammate-name,
-.teammate-career {
+.teammate__name,
+.teammate__career {
     display: block;
 
     line-height: 1.19;
@@ -578,19 +577,19 @@ ul {
     letter-spacing: 0.03em;
 }
 
-.teammate-name {
+.teammate__name {
     margin-bottom: 10px;
 
     font-size: 16px;
 }
 
-.teammate-career {
+.teammate__career {
     color: var(--grey-text);
 }
 
 /* TEAM-ICONS */
 
-.icon-link-list {
+.icon-team__list {
     display: flex;
     width: 204px;
     margin-top: 16px;
@@ -598,11 +597,11 @@ ul {
     justify-content: center;
 }
 
-.icon-link-item:not(:last-child) {
+.icon-team__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.icon-link {
+.icon-team__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -611,20 +610,20 @@ ul {
     align-items: center;
 }
 
-.icon-link {
+.icon-team__link {
         color: rgba(175, 177, 184, 1);
         transition-property: color, background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-link:hover,
-.icon-link:focus {
+.icon-team__link:hover,
+.icon-team__link:focus {
     color: rgba(255, 255, 255, 1);
     background-color: var(--blue);
 }
 
-.icon-team-contact {
+.icon-team__contact {
     fill: currentColor
 }
 
@@ -685,50 +684,51 @@ ul {
     display: flex;
     align-items: baseline;
 }
-.logo-txt-footer {
+.footer__logo {
     display: block;
     margin-bottom: 20px;
     color: var(--white);
 }
 
-.adress-street,
+.adress__street,
 .contact-link-footer {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.adress-street {
+.adress__street {
     margin-bottom: 9px;
     color: var(--white);
 }
 
-.contact-link-footer {
+.adress__link {
     color: var(--footer-contacts);
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-li:not(:last-child) {
+.adress__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.contact-link-footer:hover,
-.contact-link-footer:focus {
+.adress__link:hover,
+.adress__link:focus {
     color: var(--blue);
-}
-
-address {
-    font-style: normal;
-}
+} 
 
 .adress {
+    font-style: normal;
     width: 231px;
     margin-right: 70px;
 }
 
 .join {
+    margin-right: 93px;
+}
+
+.join__title {
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -736,16 +736,12 @@ address {
     color: rgba(255, 255, 255, 1);
 }
 
-.container-footer {
-    margin-right: 93px;
-}
-
-.email-container {
+.subscribe {
     display: flex;
     flex-direction: column;
 }
 
-.mail-title {
+.subscribe__title {
     margin-bottom: 20px;
     font-weight: 700;
     line-height: 1.16;
@@ -755,13 +751,13 @@ address {
     color: var(--white);
 }
 
-.mail-input {
+.subscribe__container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.mail-form {
+.subscribe__field {
     width: 358px;
     height: 50px;
     margin-right: 12px;
@@ -777,7 +773,7 @@ address {
     background-color: var(--bg-grey);
 }
 
-.submit-mail{
+.subscribe__btn {
     display: flex;
     align-items: center;
     text-align: center;
@@ -793,27 +789,23 @@ address {
     border-radius: 4px;
     border: none;
 }
-.submit-mail > span {
+.subscribe__wrapp {
     margin-right: 10px;
-}
-
-.icon-mail-footer {
-    fill: currentColor;
 }
 /*------------------------------FOOTER_ICONS----------------------------*/
 
-.icon-footer-list {
+.join__list {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.icon-footer-item:not(:last-child) {
+.join__item:not(:last-child) {
     margin-right: 10px;
     margin-left: 0;
 }
 
-.icon-footer-link {
+.join__link {
     display: block;
     width: 44px;
     height: 44px;
@@ -828,12 +820,12 @@ address {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-footer-link:hover,
-.icon-footer-link:focus {
+.join__link:hover,
+.join__link:focus {
     background-color: var(--blue);
 }
 
-.icon-footer-contact {
+.join__icon {
     fill: currentColor
 }
 /* -----------------------------------PORTFOLIO PAGE BELOW------------------------------- */
