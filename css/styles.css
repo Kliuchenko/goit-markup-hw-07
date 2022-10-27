@@ -820,7 +820,7 @@ ul {
     fill: currentColor
 }
 /* -----------------------------------PORTFOLIO PAGE BELOW------------------------------- */
-.portfolio-btn {
+.filter__btn {
     padding: 6px 22px;
 
     background-color: var(--less-white-for-bg);
@@ -836,57 +836,54 @@ ul {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-btn-li:not(:last-child) {
+.filter__item:not(:last-child) {
     margin-right: 8px;
 }
 
-.portfolio-btn-list {
+.filter__list {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.filter__btn:hover,
+.filter__btn:focus {
     background-color: var(--blue);
     color: white;
     cursor: pointer;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-list > li {
-    background-color: var(--white);
-}
-
-.portfolio-list {
+.portfolio__list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.portfolio-card {
+.portfolio__card {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
+    background-color: var(--white);
 
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio__link:hover,
+.portfolio__link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-card:nth-child(3n) {
+.portfolio__card:nth-child(3n) {
     margin-right: 0;
 }
 
-.portfolio-card:nth-last-child(-n + 3) {
+.portfolio__card:nth-last-child(-n + 3) {
     margin-bottom: 0;
 }
 
-.portfolio-name {
+.project__name {
     margin-bottom: 4px;
 
     font-weight: 700;
@@ -895,20 +892,20 @@ ul {
     letter-spacing: 0.06em;
 }
 
-.portfolio-descr {
+.project__descr {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--grey-text);
 }
 
-.portfolio-title {
+.project {
     padding: 20px 24px;
     border-bottom: 1px solid #EEE;
     border-left: 1px solid #EEE;
     border-right: 1px solid #EEE;
 }
 
-.portfolio-card > a {
+.portfolio__link {
     display: block;
     color: inherit;
 }
@@ -939,7 +936,7 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link:hover .overlay,
-.portfolio-link:focus .overlay {
+.portfolio__link:hover .overlay,
+.portfolio__link:focus .overlay {
     transform: translateY(-100%);
 }
